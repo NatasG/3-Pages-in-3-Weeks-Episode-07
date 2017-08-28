@@ -146,3 +146,43 @@ body {
  *********************************************/
 .reveal .slide-number {
   color: #8b743d; }
+
+
+.pull-left {
+  float:left;
+}
+
+.pull-right {
+  float:right;
+}
+
+.single-img img{
+  width: 65%;
+}
+
+.two-img-content {
+  padding-top: 70px!important;
+}
+
+.two-img-content-with-title {
+  padding-top: 30px!important;
+}
+
+.left-img,.right-img {
+  width: 50%;
+}
+
+
+.two-content .pull-left, .two-content .pull-right {
+  width: 46%;
+}
+
+.two-content .pull-left p {
+  padding-top: 30px;
+  text-align: right;
+}
+
+.two-content .pull-right p {
+  padding-top: 30px;
+  text-align: left;
+}
