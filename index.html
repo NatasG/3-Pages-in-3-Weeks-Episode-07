@@ -553,13 +553,14 @@
       <section>
         <h3>CSS Attribute & Value</h3>
         <div class="text-code-middle">
-              <em>width: </em><span class="fragment">300px;</span><br>
+              <em>width: </em><span class="fragment">300px/em/rem;</span><br>
               <em>height: </em><span class="fragment">100px;</span><br>
-              <em>background: </em><span class="fragment">green;</span><br>
+              <em>background-color: </em><span class="fragment">green/#f1f1f1/rgba(255,255,255,0);</span><br>
               <em>color: </em><span class="fragment">blue;</span><br>
               <em>font-size: </em><span class="fragment">14px;</span><br>
               <em>margin: </em><span class="fragment">20px;</span><br>
               <em>padding: </em><span class="fragment">10px;</span><br>
+              <em>border: </em><span class="fragment">2px solid red;</span><br>
               <em>...</em><span class="fragment">...</span>
         </div>
       </section>
@@ -640,7 +641,9 @@
         <div data-markdown class="text-code">
         <script type="text/template">
           ```HTML
-          @import "newstyles.css";
+          <style type="text/css">
+            @import "newstyles.css";
+          </style> 
 
           ```
         </script>
@@ -684,11 +687,6 @@
        </style>
       </section>-->
 
-    </section>
-
-    <section>
-        <h3>"我认为CSS是最复杂的语言。"</h3>
-        <p style="text-align: right" >-- 毛PM</p>
     </section>
 
     <section>
@@ -1174,19 +1172,17 @@
         <pre class="fragment roll-in">
           <code>
             .c-p-1 {
-                background: orange;
-                width:100px;
-                height:100px;
-                border:1px dotted #ccc;
-                position:relative;
-                left:20px;
-                top:-20px;
+                position: relative;
+            }
+            .c-p-1 {
+                position: relative;
+                left: 10px;
+                top: 10px;
             }
           </code>
         </pre>
         <div class="fragment roll-in c-p">
-          <div class="c-p-2"></div>
-          <div class="fragment roll-in c-p-1">relative</div>
+          <img src="./images/position-relative" alt="position relative">
         </div>
       </section>
       <style>
