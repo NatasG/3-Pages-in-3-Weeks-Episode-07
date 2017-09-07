@@ -811,6 +811,27 @@
       </section>
 
       <section>
+        <h3>how to calculate css specificity？</h3>
+        <img width="300" src="images/thinking-face.jpeg" />
+      </section>
+
+      <section>
+        <h3>specificity</h3>
+        <p>INLINE STYLE <span class="highlight-blue">&gt;</span> #ID<span class="highlight-blue">&gt;</span> .CLASS<span class="highlight-blue">&gt;</span> ELEMENT</p>
+      </section>
+
+      <section>
+        <h3>!important</h3>
+        <pre class="text-code">
+          <code>
+            <p style="color: blue;">Hello kitty!</p>
+
+            p { color: red !important; }
+          </code>
+        </pre>
+      </section>
+
+      <section>
         <h3>What is puppy's color?</h3>
         <div data-markdown class="text-code">
           <script type="text/template">
@@ -836,24 +857,10 @@
       </section>
 
       <section>
-        <h3>how to calculate css specificity？</h3>
-        <img width="300" src="images/thinking-face.jpeg" />
-      </section>
-
-      <section>
-        <h3>specificity</h3>
-        <p>INLINE STYLE <span class="highlight-blue">&gt;</span> #ID<span class="highlight-blue">&gt;</span> .CLASS<span class="highlight-blue">&gt;</span> ELEMENT</p>
-      </section>
-
-      <section>
-        <h3>!important</h3>
-        <pre class="text-code">
-          <code>
-            <p style="color: blue;">Hello kitty!</p>
-
-            p { color: red !important; }
-          </code>
-        </pre>
+        <h3>The efficiency of css selector</h3>
+        <div style="display: flex; justify-content: center;">
+          <img src="images/selector-efficiency.png" width="400px" style="margin: 0 10px 0;" alt="">
+        </div>
       </section>
     </section>
 
@@ -914,7 +921,8 @@
       </section>
 
       <section>
-        <h3>block, inline, inline-block</h3>
+        <h3>display</h3>
+        <p>block, inline, inline-block</p>
       </section>
       <section>
         <h3>Block</h3>
@@ -968,6 +976,7 @@
         </ul>
         <p class="fragment roll-in t-gray">padding: top right bottom left;<br>padding: 10px 20px 10px 20px;</p>
         <p class="fragment roll-in t-gray">padding: 10px 20px;</p>
+        <p class="fragment roll-in t-gray">padding: 10px 5px 20px;</p>
       </section>
       <section>
         <h3>margin</h3>
@@ -978,6 +987,7 @@
           <li>margin-left</li>
         </ul>
         <p class="fragment roll-in t-gray">margin: 0 auto;</p>
+        <p class="fragment roll-in t-gray">overlap</p>
       </section>
       <section data-transition="slide" data-background="#4d7e65" style="color: whitesmoke;"
                data-background-transition="zoom">
@@ -1104,6 +1114,10 @@
           <li>border-collapse</li>
           <li>border-spacing</li>
         </ul>
+        <div>
+          <img src="images/border-spacing.png">
+          <img src="images/border-collapse.png">
+        </div>
       </section>
     </section>
 
@@ -1131,6 +1145,11 @@
       <section>
         <h3>clear</h3>
         <p>clear: none | left | right | both</p>
+        <div>
+          <img src="images/float-1.png" style="width: 300px;height: 300px;" >
+          <img src="images/float-all.png" style="width: 300px;height: 300px;">
+          <img src="images/clear-float.png" style="width: 300px;height: 300px;">
+        </div>
       </section>
 
       <section>
@@ -1181,8 +1200,8 @@
             }
           </code>
         </pre>
-        <div class="fragment roll-in c-p">
-          <img src="./images/position-relative" alt="position relative">
+        <div class="fragment roll-in">
+          <img src="images/position-relative.png" alt="position relative" style="width: 400px;">
         </div>
       </section>
       <style>
@@ -1359,9 +1378,46 @@
         <p>Reset css is used to override the default browser style.</p>
       </section>
       <section>
+        <h3>css attributes order</h3>
+        <div data-markdown class="text-code">
+          <script type="text/template">
+            ``` CSS
+  /* Positioning */
+  position: absolute;
+  z-index: 10;
+  top: 0;
+  right: 0;
+
+  /* Display & Box Model */
+  display: inline-block;
+  overflow: hidden;
+  box-sizing: border-box;
+  width: 100px;
+  height: 100px;
+  padding: 10px;
+  border: 10px solid #333;
+  margin: 10px;
+
+  /* Color */
+  background: #000;
+  color: #fff;
+  
+  /* Text */
+  font-family: sans-serif;
+  font-size: 16px;
+  line-height: 1.4;
+  text-align: right;
+
+  /* Other */
+  cursor: pointer;
+            ```
+          </script>
+        </div>
+      </section>
+      <!-- <section>
         <h3>BEM</h3>
         <p>Block Element Modifier</p>
-      </section>
+      </section> -->
 
     </section>
     </section>
